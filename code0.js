@@ -2,8 +2,6 @@ gdjs.Untitled_32sceneCode = {};
 gdjs.Untitled_32sceneCode.localVariables = [];
 gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects1_1final = [];
 
-gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects2_1final = [];
-
 gdjs.Untitled_32sceneCode.GDjoystickcolisorObjects1_1final = [];
 
 gdjs.Untitled_32sceneCode.GDcoinObjects1= [];
@@ -168,42 +166,18 @@ gdjs.Untitled_32sceneCode.eventsList2 = function(runtimeScene) {
 
 {
 
-gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects2.length = 0;
-
+gdjs.copyArray(runtimeScene.getObjects("LineLightJoystick"), gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects2);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects2_1final.length = 0;
-let isConditionTrue_1 = false;
-isConditionTrue_0 = false;
-{
-isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "w");
-if(isConditionTrue_1) {
-    isConditionTrue_0 = true;
-}
-}
-{
-gdjs.copyArray(runtimeScene.getObjects("LineLightJoystick"), gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects3);
-for (var i = 0, k = 0, l = gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects3.length;i<l;++i) {
-    if ( gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects3[i].IsDirectionPushed4Way("Up", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
-        isConditionTrue_1 = true;
-        gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects3[k] = gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects3[i];
+for (var i = 0, k = 0, l = gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects2.length;i<l;++i) {
+    if ( gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects2[i].IsDirectionPushed4Way("Up", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects2[k] = gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects2[i];
         ++k;
     }
 }
-gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects3.length = k;
-if(isConditionTrue_1) {
-    isConditionTrue_0 = true;
-    for (let j = 0, jLen = gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects3.length; j < jLen ; ++j) {
-        if ( gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects2_1final.indexOf(gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects3[j]) === -1 )
-            gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects2_1final.push(gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects3[j]);
-    }
-}
-}
-{
-gdjs.copyArray(gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects2_1final, gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects2);
-}
-}
+gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects2.length = k;
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("New3DBox"), gdjs.Untitled_32sceneCode.GDNew3DBoxObjects2);
 gdjs.copyArray(runtimeScene.getObjects("New3DBox2"), gdjs.Untitled_32sceneCode.GDNew3DBox2Objects2);
@@ -217,42 +191,18 @@ gdjs.copyArray(runtimeScene.getObjects("New3DBox2"), gdjs.Untitled_32sceneCode.G
 
 {
 
-gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects2.length = 0;
-
+gdjs.copyArray(runtimeScene.getObjects("LineLightJoystick"), gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects2);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects2_1final.length = 0;
-let isConditionTrue_1 = false;
-isConditionTrue_0 = false;
-{
-isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "s");
-if(isConditionTrue_1) {
-    isConditionTrue_0 = true;
-}
-}
-{
-gdjs.copyArray(runtimeScene.getObjects("LineLightJoystick"), gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects3);
-for (var i = 0, k = 0, l = gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects3.length;i<l;++i) {
-    if ( gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects3[i].IsDirectionPushed4Way("Down", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
-        isConditionTrue_1 = true;
-        gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects3[k] = gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects3[i];
+for (var i = 0, k = 0, l = gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects2.length;i<l;++i) {
+    if ( gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects2[i].IsDirectionPushed4Way("Down", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects2[k] = gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects2[i];
         ++k;
     }
 }
-gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects3.length = k;
-if(isConditionTrue_1) {
-    isConditionTrue_0 = true;
-    for (let j = 0, jLen = gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects3.length; j < jLen ; ++j) {
-        if ( gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects2_1final.indexOf(gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects3[j]) === -1 )
-            gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects2_1final.push(gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects3[j]);
-    }
-}
-}
-{
-gdjs.copyArray(gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects2_1final, gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects2);
-}
-}
+gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects2.length = k;
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("New3DBox"), gdjs.Untitled_32sceneCode.GDNew3DBoxObjects2);
 gdjs.copyArray(runtimeScene.getObjects("New3DBox2"), gdjs.Untitled_32sceneCode.GDNew3DBox2Objects2);
@@ -266,42 +216,18 @@ gdjs.copyArray(runtimeScene.getObjects("New3DBox2"), gdjs.Untitled_32sceneCode.G
 
 {
 
-gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects2.length = 0;
-
+gdjs.copyArray(runtimeScene.getObjects("LineLightJoystick"), gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects2);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects2_1final.length = 0;
-let isConditionTrue_1 = false;
-isConditionTrue_0 = false;
-{
-isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "a");
-if(isConditionTrue_1) {
-    isConditionTrue_0 = true;
-}
-}
-{
-gdjs.copyArray(runtimeScene.getObjects("LineLightJoystick"), gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects3);
-for (var i = 0, k = 0, l = gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects3.length;i<l;++i) {
-    if ( gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects3[i].IsDirectionPushed4Way("Left", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
-        isConditionTrue_1 = true;
-        gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects3[k] = gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects3[i];
+for (var i = 0, k = 0, l = gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects2.length;i<l;++i) {
+    if ( gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects2[i].IsDirectionPushed4Way("Left", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects2[k] = gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects2[i];
         ++k;
     }
 }
-gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects3.length = k;
-if(isConditionTrue_1) {
-    isConditionTrue_0 = true;
-    for (let j = 0, jLen = gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects3.length; j < jLen ; ++j) {
-        if ( gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects2_1final.indexOf(gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects3[j]) === -1 )
-            gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects2_1final.push(gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects3[j]);
-    }
-}
-}
-{
-gdjs.copyArray(gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects2_1final, gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects2);
-}
-}
+gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects2.length = k;
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("New3DBox"), gdjs.Untitled_32sceneCode.GDNew3DBoxObjects2);
 gdjs.copyArray(runtimeScene.getObjects("New3DBox2"), gdjs.Untitled_32sceneCode.GDNew3DBox2Objects2);
@@ -315,42 +241,18 @@ gdjs.copyArray(runtimeScene.getObjects("New3DBox2"), gdjs.Untitled_32sceneCode.G
 
 {
 
-gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects2.length = 0;
-
+gdjs.copyArray(runtimeScene.getObjects("LineLightJoystick"), gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects2);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects2_1final.length = 0;
-let isConditionTrue_1 = false;
-isConditionTrue_0 = false;
-{
-isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "d");
-if(isConditionTrue_1) {
-    isConditionTrue_0 = true;
-}
-}
-{
-gdjs.copyArray(runtimeScene.getObjects("LineLightJoystick"), gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects3);
-for (var i = 0, k = 0, l = gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects3.length;i<l;++i) {
-    if ( gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects3[i].IsDirectionPushed4Way("Right", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
-        isConditionTrue_1 = true;
-        gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects3[k] = gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects3[i];
+for (var i = 0, k = 0, l = gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects2.length;i<l;++i) {
+    if ( gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects2[i].IsDirectionPushed4Way("Right", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects2[k] = gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects2[i];
         ++k;
     }
 }
-gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects3.length = k;
-if(isConditionTrue_1) {
-    isConditionTrue_0 = true;
-    for (let j = 0, jLen = gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects3.length; j < jLen ; ++j) {
-        if ( gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects2_1final.indexOf(gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects3[j]) === -1 )
-            gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects2_1final.push(gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects3[j]);
-    }
-}
-}
-{
-gdjs.copyArray(gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects2_1final, gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects2);
-}
-}
+gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects2.length = k;
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("New3DBox"), gdjs.Untitled_32sceneCode.GDNew3DBoxObjects2);
 gdjs.copyArray(runtimeScene.getObjects("New3DBox2"), gdjs.Untitled_32sceneCode.GDNew3DBox2Objects2);
@@ -378,7 +280,7 @@ for (var i = 0, k = 0, l = gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects2
 gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12551548);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12554916);
 }
 }
 if (isConditionTrue_0) {
@@ -443,7 +345,7 @@ if(isConditionTrue_1) {
 }
 }
 {
-{isConditionTrue_1 = runtimeScene.getOnceTriggers().triggerOnce(12554180);
+{isConditionTrue_1 = runtimeScene.getOnceTriggers().triggerOnce(12557588);
 }
 if(isConditionTrue_1) {
     isConditionTrue_0 = true;
@@ -602,7 +504,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12530660);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12533220);
 }
 }
 }
@@ -632,7 +534,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.Untitled_32sceneCode.mapOfGDgdjs_9546Untitled_959532sceneCode_9546GDavan_959595231arTurnoObjects1Objects, runtimeScene, true, true);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12532220);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12534780);
 }
 }
 }
@@ -705,10 +607,10 @@ gdjs.Untitled_32sceneCode.eventsList1(runtimeScene);} //End of subevents
 
 let isConditionTrue_0 = false;
 {
-gdjs.copyArray(runtimeScene.getObjects("touchColisor"), gdjs.Untitled_32sceneCode.GDtouchColisorObjects1);
+gdjs.copyArray(runtimeScene.getObjects("joystickcolisor"), gdjs.Untitled_32sceneCode.GDjoystickcolisorObjects1);
 {gdjs.evtsExt__MousePointerLock__RequestPointerLock.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}{for(var i = 0, len = gdjs.Untitled_32sceneCode.GDtouchColisorObjects1.length ;i < len;++i) {
-    gdjs.Untitled_32sceneCode.GDtouchColisorObjects1[i].hide();
+}{for(var i = 0, len = gdjs.Untitled_32sceneCode.GDjoystickcolisorObjects1.length ;i < len;++i) {
+    gdjs.Untitled_32sceneCode.GDjoystickcolisorObjects1[i].hide();
 }
 }}
 
@@ -733,6 +635,74 @@ gdjs.copyArray(runtimeScene.getObjects("New3DBox2"), gdjs.Untitled_32sceneCode.G
 {
 
 
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "w");
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("New3DBox"), gdjs.Untitled_32sceneCode.GDNew3DBoxObjects1);
+gdjs.copyArray(runtimeScene.getObjects("New3DBox2"), gdjs.Untitled_32sceneCode.GDNew3DBox2Objects1);
+{for(var i = 0, len = gdjs.Untitled_32sceneCode.GDNew3DBoxObjects1.length ;i < len;++i) {
+    gdjs.Untitled_32sceneCode.GDNew3DBoxObjects1[i].addPolarForce((( gdjs.Untitled_32sceneCode.GDNew3DBox2Objects1.length === 0 ) ? 0 :gdjs.Untitled_32sceneCode.GDNew3DBox2Objects1[0].getAngle()), 350, 0);
+}
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "s");
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("New3DBox"), gdjs.Untitled_32sceneCode.GDNew3DBoxObjects1);
+gdjs.copyArray(runtimeScene.getObjects("New3DBox2"), gdjs.Untitled_32sceneCode.GDNew3DBox2Objects1);
+{for(var i = 0, len = gdjs.Untitled_32sceneCode.GDNew3DBoxObjects1.length ;i < len;++i) {
+    gdjs.Untitled_32sceneCode.GDNew3DBoxObjects1[i].addPolarForce((( gdjs.Untitled_32sceneCode.GDNew3DBox2Objects1.length === 0 ) ? 0 :gdjs.Untitled_32sceneCode.GDNew3DBox2Objects1[0].getAngle()), -(350), 0);
+}
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "d");
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("New3DBox"), gdjs.Untitled_32sceneCode.GDNew3DBoxObjects1);
+gdjs.copyArray(runtimeScene.getObjects("New3DBox2"), gdjs.Untitled_32sceneCode.GDNew3DBox2Objects1);
+{for(var i = 0, len = gdjs.Untitled_32sceneCode.GDNew3DBoxObjects1.length ;i < len;++i) {
+    gdjs.Untitled_32sceneCode.GDNew3DBoxObjects1[i].addPolarForce((( gdjs.Untitled_32sceneCode.GDNew3DBox2Objects1.length === 0 ) ? 0 :gdjs.Untitled_32sceneCode.GDNew3DBox2Objects1[0].getAngle()) - 90, -(350), 0);
+}
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "a");
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("New3DBox"), gdjs.Untitled_32sceneCode.GDNew3DBoxObjects1);
+gdjs.copyArray(runtimeScene.getObjects("New3DBox2"), gdjs.Untitled_32sceneCode.GDNew3DBox2Objects1);
+{for(var i = 0, len = gdjs.Untitled_32sceneCode.GDNew3DBoxObjects1.length ;i < len;++i) {
+    gdjs.Untitled_32sceneCode.GDNew3DBoxObjects1[i].addPolarForce((( gdjs.Untitled_32sceneCode.GDNew3DBox2Objects1.length === 0 ) ? 0 :gdjs.Untitled_32sceneCode.GDNew3DBox2Objects1[0].getAngle()) + 90, -(350), 0);
+}
+}}
 
 }
 
@@ -890,7 +860,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Space");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12565444);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12569020);
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
@@ -907,7 +877,7 @@ gdjs.Untitled_32sceneCode.GDNew3DBoxObjects1.length = k;
 if (isConditionTrue_0) {
 /* Reuse gdjs.Untitled_32sceneCode.GDNew3DBoxObjects1 */
 {for(var i = 0, len = gdjs.Untitled_32sceneCode.GDNew3DBoxObjects1.length ;i < len;++i) {
-    gdjs.Untitled_32sceneCode.GDNew3DBoxObjects1[i].getBehavior("Object3D").setZ(gdjs.Untitled_32sceneCode.GDNew3DBoxObjects1[i].getBehavior("Object3D").getZ() + (60));
+    gdjs.Untitled_32sceneCode.GDNew3DBoxObjects1[i].getBehavior("Object3D").setZ(gdjs.Untitled_32sceneCode.GDNew3DBoxObjects1[i].getBehavior("Object3D").getZ() + (130));
 }
 }}
 
@@ -965,7 +935,7 @@ if(isConditionTrue_1) {
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12569508);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12572748);
 }
 }
 if (isConditionTrue_0) {
@@ -983,7 +953,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "w");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12570164);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12573460);
 }
 }
 if (isConditionTrue_0) {
@@ -1059,7 +1029,7 @@ gdjs.copyArray(runtimeScene.getObjects("New3DBox2"), gdjs.Untitled_32sceneCode.G
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12576532);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12579740);
 }
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("New3DBox2"), gdjs.Untitled_32sceneCode.GDNew3DBox2Objects1);

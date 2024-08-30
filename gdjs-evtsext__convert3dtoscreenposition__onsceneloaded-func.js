@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__Convert3dToScreenPosition__onSceneLoaded !== "undefined
 gdjs.evtsExt__Convert3dToScreenPosition__onSceneLoaded = {};
 
 
-gdjs.evtsExt__Convert3dToScreenPosition__onSceneLoaded.userFunc0xa65ae0 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Convert3dToScreenPosition__onSceneLoaded.userFunc0x8f6af0 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 if (gdjs.__Convert3dToScreenPosition) {
     // return;
@@ -39,7 +39,7 @@ gdjs.evtsExt__Convert3dToScreenPosition__onSceneLoaded.eventsList0 = function(ru
 {
 
 
-gdjs.evtsExt__Convert3dToScreenPosition__onSceneLoaded.userFunc0xa65ae0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Convert3dToScreenPosition__onSceneLoaded.userFunc0x8f6af0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
