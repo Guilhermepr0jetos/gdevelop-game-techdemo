@@ -1,0 +1,12 @@
+{
+  "name": "Banco Mundial",
+  "short_name": "Banco Mundial",
+  "id": "com.atari2006.rpg",
+  "description": "",
+  "orientation": "landscape",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "black",
+  "categories": ["games", "entertainment"],
+  "icons": []
+}
