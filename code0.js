@@ -594,7 +594,11 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = !(gdjs.evtTools.systemInfo.isMobile());
 if (isConditionTrue_0) {
-
+gdjs.copyArray(runtimeScene.getObjects("LineLightJoystick"), gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects1);
+{for(var i = 0, len = gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects1.length ;i < len;++i) {
+    gdjs.Untitled_32sceneCode.GDLineLightJoystickObjects1[i].deleteFromScene(runtimeScene);
+}
+}
 { //Subevents
 gdjs.Untitled_32sceneCode.eventsList1(runtimeScene);} //End of subevents
 }
